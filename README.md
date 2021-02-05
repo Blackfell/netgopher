@@ -25,7 +25,7 @@ You can get Netgopher easily with:
 ❯ go get -u "github.com/blackfell/ng"
 ```
 
-But this will only install in your local $GOPATH; additionally, the binary will be fairly large, compiled only for your OS. I usually just grab a copy of all the [released binaries](/releases), which have been cross compileed and stripped down to ~ 2MB. 
+But this will only install in your local $GOPATH; additionally, the binary will be fairly large, compiled only for your OS. I usually just grab a copy of all the [released binaries](https://github.com/Blackfell/ng/releases/tag/v0.1), which have been cross compileed and stripped down to ~ 2MB. 
 
 # Examples
 
