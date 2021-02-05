@@ -21,7 +21,7 @@ Usage of ng:
 
 You can get Netgopher easily with:
 
-``
+```
 ❯ go get -u "github.com/blackfell/ng"
 ```
 
