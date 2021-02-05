@@ -29,7 +29,9 @@ You can **but probably shouldn't**  get Netgopher easily with:
 
 ## Why not? 
 
-Well this will only install ng in your local $GOPATH; additionally, the binary will be fairly large, compiled only for your OS. I wrote this version to use during CTFs meaning I want a smaller binary, preferably with multi-platform support, so **grrab a copy of all the [released binaries](https://github.com/Blackfell/ng/releases/tag/v0.1) instead**, which have been cross compileed and stripped down to ~ 2MB. 
+Well this will only install ng in your local $GOPATH; additionally, the binary will be fairly large, compiled only for your OS. 
+
+I wrote this version to use during CTFs meaning I want a smaller binary, preferably with multi-platform support, so... **grab a copy of all the [released binaries](https://github.com/Blackfell/ng/releases/tag/v0.1) instead**, which have been cross compileed and stripped down to ~ 2MB. 
 
 # Examples
 
