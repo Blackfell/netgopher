@@ -1,5 +1,7 @@
 # Netgopher
 
+![Example gif of relay usage](assets/relay.gif)
+
 This is a basic Go implementation of (some functions of) Netcat and has been produced whilst working through the very-excellent NoStarch Press book [Black Hat Go](https://nostarch.com/blackhatgo) (which wins best cover too IMO). 
 
 This implementation of Netcat is basic and has been built up piecemeal whilst following various book sections. Notably, this tool is TCP only, with limited features (no hexdump etc.). That said, Netgopher does most things I want Netcat to do during Capture The Flag exercises, including simple out of the box port realying.
@@ -62,7 +64,7 @@ C:\Windowss\system32>
 # Start a relay on your local host
 ❯ ng -l 1234 -l 445
 # On your remote host, forward a connection to local port 445
-❯ ng -c local_host_name:1234 -c 127.0.0.1:445
+❯ ng -c local_hostname:1234 -c 127.0.0.1:445
 # Your local machine now has access to that remote port 445 on 127.0.0.1:445
 ```
 # Port 'spoofing' - Forward incoming connections to local port:
