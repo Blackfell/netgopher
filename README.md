@@ -1,10 +1,8 @@
 # Netgopher
 
-This is a basic Go implementation of (bits of) Netcat, produced while working through the very-excellent [NoStarch Press Black Hat Go book](https://nostarch.com/blackhatgo). This implementation is TCP only, with limited features, but does everything I want Netcat to do during Capture The Flag exercises, including simpler (eye of the beholder!) port realying. 
+This is a basic Go implementation of (some functions of) Netcat and has been produced whilst working through the very-excellent NoStarch Press book [Black Hat Go](https://nostarch.com/blackhatgo) (which wins best cover too IMO). 
 
-## Usage
-
-Netgopher allows you to connect to things together; these could be a bind listener, a TCP connection, an Operating System command, or the Stdin and Stdout of the console you're working in. Any connection must be specified in the *HOST:PORT* syntax and any OS command must be quoted as appropriate:
+This implementation of Netcat is basic and has been built up piecemeal whilst following various book sections. Notably, this tool is TCP only, with limited features (no hexdump etc.). That said, Netgopher does most things I want Netcat to do during Capture The Flag exercises, including simple out of the box port realying.
 
 ```
 ❯ ng                                                                                                 ─╯
@@ -19,11 +17,25 @@ Usage of ng:
   -v    Display detailed progress messages.
 ```
 
-## Examples
+# Installation
 
-The simplest examples are the classic netcat usages, like connecting to a listening port on a remote host. You can try this out with a pair of listeners:
+You can get Netgopher easily with:
+
+``
+❯ go get -u "github.com/blackfell/ng"
+```
+
+But this will only install in your local $GOPATH; additionally, the binary will be fairly large, compiled only for your OS. I usually just grab a copy of all the [released binaries](/releases), which have been cross compileed and stripped down to ~ 2MB. 
+
+# Examples
+
+## Basic Usage
+
+The simplest examples are the classic netcat connect and listen functions. You can try this out with a pair of listeners:
 
 ![Listener & connect example image](assets/basic.gif)
+
+## CTF Use Cases
 
 Some really common use cases I have are:
 
@@ -62,3 +74,7 @@ Port 'spoofing' - Forward incoming connections to local port:
 # Listen on port 1234 and forward connections to ssh server
 ❯ ng -l 1234 -c 127.0.0.1:22
 ```
+
+# Feedback?
+
+Issues, pulls, emails, tweets all welcome!
