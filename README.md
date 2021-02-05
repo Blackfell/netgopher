@@ -37,7 +37,7 @@ I wrote this version to use during CTFs meaning I want a smaller binary, prefera
 
 ## Basic Usage
 
-The simplest examples are the classic netcat connect and listen functions. You can try this out with a pair of listeners:
+The simplest examples are the classic netcat connect and listen functions. You can try this out with a listener/conneciton pair:
 
 ![Listener & connect example image](assets/basic.gif)
 
