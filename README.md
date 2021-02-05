@@ -37,7 +37,7 @@ I wrote this version to use during CTFs meaning I want a smaller binary, prefera
 
 ## Basic Usage
 
-The simplest examples are the classic netcat connect and listen functions. You can try this out with a listener/conneciton pair:
+The simplest examples are the classic netcat connect and listen functions. You can try this out with a listener/connection pair:
 
 ![Listener & connect example image](assets/basic.gif)
 
@@ -71,10 +71,11 @@ C:\Windowss\system32>
 ❯ ng -c local_hostname:1234 -c 127.0.0.1:445
 # Your local machine now has access to that remote port 445 on 127.0.0.1:445
 ```
-# Port 'spoofing' - Forward incoming connections to local port:
+### Port 'spoofing' - Forward incoming connections to local port:
 ```
 # Listen on port 1234 and forward connections to ssh server
 ❯ ng -l 1234 -c 127.0.0.1:22
 ```
-# Feedback?
-Issues, pulls, emails, tweets all welcome!
+# That's it!
+
+Hope you find this interesting, useful, or something. Issues, pulls, emails, tweets all welcome!
