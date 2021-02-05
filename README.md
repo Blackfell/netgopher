@@ -62,7 +62,7 @@ C:\Windowss\system32>
 # Start a relay on your local host
 ❯ ng -l 1234 -l 445
 # On your remote host, forward a connection to local port 445
-❯ ng -c remote_host:1234 -c 127.0.0.1:445
+❯ ng -c local_host_name:1234 -c 127.0.0.1:445
 # Your local machine now has access to that remote port 445 on 127.0.0.1:445
 ```
 # Port 'spoofing' - Forward incoming connections to local port:
